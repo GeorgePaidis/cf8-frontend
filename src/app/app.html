@@ -6,7 +6,27 @@
       </div>
       <div class="bg-success p-2 text-light">
         <h3>Welcome to Angular</h3>
-        <p>Hello, nice to meet you</p>
+        <p>Hello {{name}}, nice to meet you</p>
       </div>
+    </div>
+  </div>
+
+  <!-- Step 2 Component -->
+  <div class="container mt-4">
+    <h3>From Step 2 Component</h3>
+    <div class="d-flex gap-5 text-nowrap">
+      <app-step2-person-table></app-step2-person-table>
+      <app-step2-person-table></app-step2-person-table>
+      <app-step2-person-table></app-step2-person-table>
+    </div>
+  </div>
+
+  <!-- Step 3 Component -->
+  <div class="container mt-4">
+    <h3>From Step3 Component</h3>
+    <div class="d-flex gap-5 text-nowrap">
+      <app-step3-person-table-input [person]="person1"></app-step3-person-table-input>
+      <app-step3-person-table-input></app-step3-person-table-input>
+      <app-step3-person-table-input [person]="person2"></app-step3-person-table-input>
     </div>
   </div>
